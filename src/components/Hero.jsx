@@ -9,7 +9,13 @@ const Hero = () => {
 
   const sentences = [
     "Software Engineer,",
-    "Front end & App Developer."
+    "Frontend Developer",
+    "Backend Developer",
+    "Full Stack Developer",
+    "Web Developer",
+    "Mobile App Developer",
+    "Software Engineer",
+ 
   ];
 
   useEffect(() => {
