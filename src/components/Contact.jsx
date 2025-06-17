@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Github, Linkedin, Twitter } from 'lucide-react'
 import { AnimatePresence } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 
@@ -192,22 +192,25 @@ const Contact = () => {
               <h4 className="text-white font-semibold mb-4">Follow Me</h4>
               <div className="flex gap-4">
                 {[
-                  { name: 'GitHub', icon: '🐙', href: 'https://github.com/abdulaziznejib' },
-                  { name: 'LinkedIn', icon: '💼', href: 'https://linkedin.com/in/abdulaziznejib' },
-                  { name: 'Twitter', icon: '🐦', href: 'https://twitter.com/abdulaziznejib' }
-                ].map((social, index) => (
-                  <motion.a
-                    key={social.name}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.1, y: -5 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="p-3 bg-gray-800/50 rounded-lg border border-gray-700/50 hover:border-emerald-500/50 transition-all duration-300 text-2xl"
-                  >
-                    {social.icon}
-                  </motion.a>
-                ))}
+                  { name: 'GitHub', icon: Github, href: 'https://github.com/abdu128' },
+                  { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/abdulaziz-nejib-7a0700354' },
+                  { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/abdulaziznejib' }
+                ].map((social, index) => {
+                  const IconComponent = social.icon;
+                  return (
+                    <motion.a
+                      key={social.name}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1, y: -5 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="p-3 bg-gray-800/50 rounded-lg border border-gray-700/50 hover:border-emerald-500/50 transition-all duration-300 text-2xl"
+                    >
+                      <IconComponent size={24} />
+                    </motion.a>
+                  );
+                })}
               </div>
             </motion.div>
           </motion.div>
