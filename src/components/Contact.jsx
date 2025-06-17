@@ -139,13 +139,13 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Information */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            className="space-y-8"
+            className="space-y-6 md:space-y-8"
           >
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-bold text-white mb-6">
@@ -220,7 +220,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50"
+            className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-gray-700/50"
           >
             <h3 className="text-2xl font-bold text-white mb-6">Send Message</h3>
             
@@ -356,7 +356,7 @@ const Contact = () => {
 
         {/* Floating Elements */}
         <motion.div
-          className="absolute top-1/4 right-10 text-6xl opacity-10"
+          className="absolute top-1/4 right-4 md:right-10 text-4xl md:text-6xl opacity-10"
           animate={{
             y: [0, -20, 0],
             rotate: [0, 5, 0],
@@ -370,7 +370,7 @@ const Contact = () => {
           📧
         </motion.div>
         <motion.div
-          className="absolute bottom-1/4 left-10 text-6xl opacity-10"
+          className="absolute bottom-1/4 left-4 md:left-10 text-4xl md:text-6xl opacity-10"
           animate={{
             y: [0, 20, 0],
             rotate: [0, -5, 0],
@@ -388,4 +388,4 @@ const Contact = () => {
   )
 }
 
-export default Contact 
+export default Contact
