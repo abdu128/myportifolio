@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, Linkedin, Mail, Download, ExternalLink } from 'lucide-react';
+import avatar from '../assets/avatar.jpg';
 
 const Hero = () => {
   const containerRef = useRef(null);
@@ -89,7 +90,7 @@ const Hero = () => {
           <div className="relative mb-8 mx-auto">
             <div className="relative w-32 h-32 mx-auto">
               <img
-                src="/src/assets/avatar.jpg"
+                src={avatar}
                 alt="Abdulaziz Nejib"
                 className="w-full h-full object-cover rounded-full border-4 border-emerald-500/30 shadow-2xl"
               />
