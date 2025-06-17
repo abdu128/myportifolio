@@ -8,14 +8,10 @@ const Hero = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   const sentences = [
-    "Software Engineer,",
-    "Frontend Developer",
-    "Backend Developer",
-    "Full Stack Developer",
-    "Web Developer",
-    "Mobile App Developer",
     "Software Engineer",
- 
+    "Mobile App Developer",
+    "Web Developer",
+    "Full-Stack Developer", 
   ];
 
   useEffect(() => {
