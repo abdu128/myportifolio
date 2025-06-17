@@ -1,0 +1,103 @@
+[
+  {
+    "id": 1,
+    "title": "Travel Ethiopia Website",
+    "description": "A modern travel booking website showcasing Ethiopia's beautiful destinations including Erta Ale lava lake, Harar, Bale, and Gondar with tour packages and booking system.",
+    "image": "https://travelethiopia.netlify.app/assets/img/freind.jpg",
+    "tags": ["HTML", "CSS", "JavaScript", "Travel", "Ethiopia"],
+    "technologies": ["HTML", "CSS", "JavaScript", "Travel APIs", "Netlify"],
+    "category": "web",
+    "liveUrl": "http://travelethiopia.netlify.app/",
+    "githubUrl": "https://github.com/abdu128/travel"
+  },
+  {
+    "id": 2,
+    "title": "Astu Social Mobile & Web App",
+    "description": "A comprehensive social media platform with mobile app, web interface, and admin panel for university students and staff.",
+    "image": "https://www.smallbusiness.nsw.gov.au/sites/default/files/styles/1280/public/2024-10/iStock-1371763060.jpg?itok=tiZJ1Kv1",
+    "tags": ["Flutter", "Web", "Admin Panel", "Social"],
+    "technologies": ["Flutter", "Node.js", "Postgres", "Admin Dashboard"],
+    "category": "fullstack",
+    "liveUrl": "https://astu.netlify.app/",
+    "githubUrl": "https://github.com/abdu128/astu-social"
+  },
+  {
+    "id": 3,
+    "title": "Driving School Management System",
+    "description": "A full-stack driving school management system with admin panel, teacher dashboard, and student portal for course management and scheduling.",
+    "image": "https://media.istockphoto.com/id/1254705310/photo/strong-unrecognizable-mid-adult-man-drives-his-car.jpg?s=612x612&w=0&k=20&c=mOcfd2RNkCnNvt2FNt45vfOjJcSxh5-ahbQBhQ88pss=",
+    "tags": ["Fullstack", "Admin Panel", "Education"],
+    "technologies": ["React", "Node.js", "Express", "Postgres", "Admin Dashboard"],
+    "category": "fullstack",
+    "liveUrl": "https://edriving.netlify.app/",
+    "githubUrl": "https://github.com/edrivingschool/edrivingstudent"
+  },
+  {
+    "id": 4,
+    "title": "Angular E-Commerce Website",
+    "description": "A complete e-commerce website built with Angular, featuring product catalog, shopping cart, user authentication, and payment processing.",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
+    "tags": ["Angular", "TypeScript", "E-commerce"],
+    "technologies": ["Angular", "TypeScript", "HTML", "CSS", "E-commerce APIs"],
+    "category": "web",
+    "liveUrl": "https://angular-ecommerce-demo.com",
+    "githubUrl": "https://github.com/abdu128/Angular-E-commerce-website"
+  },
+  {
+    "id": 5,
+    "title": "Ethiopian Recipe Mobile App",
+    "description": "A Flutter mobile app showcasing traditional Ethiopian recipes with step-by-step cooking instructions, ingredients, and cultural information.",
+    "image": "https://deorwineblog.b-cdn.net/uploads/2022/06/b6.jpg",
+    "tags": ["Flutter", "Dart", "Mobile", "Food"],
+    "technologies": ["Flutter", "Dart", "Mobile Development", "Recipe APIs"],
+    "category": "flutter",
+    "liveUrl": "https://ethiopian-recipe-app.com",
+    "githubUrl": "https://github.com/abdu128/Ethiopian-Recipe"
+  },
+
+  {
+    "id": 7,
+    "title": "Fitness Tracking App",
+    "description": "Cross-platform fitness app with workout tracking, progress analytics, and social features using Flutter and Firebase.",
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+    "tags": ["Flutter", "Firebase", "Health"],
+    "technologies": ["Flutter", "Firebase", "Health APIs", "Analytics"],
+    "category": "flutter",
+    "liveUrl": "https://fitness-app-demo.com",
+    "githubUrl": "https://github.com/abdu128/fitness-tracker"
+  },
+  {
+    "id": 8,
+    "title": "Food Delivery App",
+    "description": "Restaurant food delivery app with real-time tracking, payment processing, and restaurant management system.",
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/611200102654043.5f3ba98fbe55c.png",
+    "tags": ["Flutter", "Maps", "Payment"],
+    "technologies": ["Flutter", "Google Maps", "Payment API", "Real-time"],
+    "category": "flutter",
+    "liveUrl": "https://food-delivery-demo.com",
+    "githubUrl": "https://github.com/abdu128/food-delivery"
+  },
+
+  {
+    "id": 10,
+    "title": "Task Management App",
+    "description": "Productivity app with task management, team collaboration, and project tracking features.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop",
+    "tags": ["Flutter", "Productivity", "Team"],
+    "technologies": ["Flutter", "State Management", "Team APIs", "Notifications"],
+    "category": "flutter",
+    "liveUrl": "https://task-app-demo.com",
+    "githubUrl": "https://github.com/abdu128/task-manager"
+  },
+  {
+    "id": 11,
+    "title": "Weather App",
+    "description": "Beautiful weather app with location-based forecasts, weather maps, and customizable widgets.",
+    "image": "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=400&h=300&fit=crop",
+    "tags": ["Flutter", "Weather API", "Maps"],
+    "technologies": ["Flutter", "Weather APIs", "Location Services", "Widgets"],
+    "category": "flutter",
+    "liveUrl": "https://weather-app-demo.com",
+    "githubUrl": "https://github.com/abdu128/weather-app"
+  }
+] 

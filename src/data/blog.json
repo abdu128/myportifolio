@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Building Beautiful UIs with Flutter",
+    "excerpt": "A comprehensive guide to creating stunning user interfaces using Flutter widgets and Material Design principles.",
+    "image": "/public/vite.svg",
+    "url": "https://blog-demo.com/flutter-ui",
+    "date": "2024-06-01",
+    "readingTime": 8
+  },
+  {
+    "title": "State Management in Flutter Apps",
+    "excerpt": "Exploring different state management solutions like Provider, Bloc, and Riverpod for scalable Flutter applications.",
+    "image": "/public/vite.svg",
+    "url": "https://blog-demo.com/flutter-state",
+    "date": "2024-05-20",
+    "readingTime": 10
+  },
+  {
+    "title": "Firebase Integration with Flutter",
+    "excerpt": "Complete guide to integrating Firebase services including Authentication, Firestore, and Cloud Functions in Flutter apps.",
+    "image": "/public/vite.svg",
+    "url": "https://blog-demo.com/flutter-firebase",
+    "date": "2024-05-10",
+    "readingTime": 12
+  }
+] 
