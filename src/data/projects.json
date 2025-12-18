@@ -10,8 +10,20 @@
     "liveUrl": "http://travelethiopia.netlify.app/",
     "githubUrl": "https://github.com/abdu128/travel"
   },
-  {
+    {
     "id": 2,
+    "title": "Angular E-Commerce Website",
+    "description": "A complete e-commerce website built with Angular, featuring product catalog, shopping cart, user authentication, and payment processing.",
+    "image": "https://sgwebpartners.com/wp-content/uploads/2019/04/woocommerce-wholesale-storm-creek-983x553.jpg",
+    "tags": ["Angular", "TypeScript", "E-commerce"],
+    "technologies": ["Angular", "TypeScript", "HTML", "CSS", "E-commerce APIs"],
+    "category": "web",
+    "liveUrl": "https://angular-ecommerce-demo.com",
+    "githubUrl": "https://github.com/abdu128/Angular-E-commerce-website"
+  },
+  
+  {
+    "id": 3,
     "title": "Astu Social Mobile & Web App",
     "description": "A comprehensive social media platform with mobile app, web interface, and admin panel for university students and staff.",
     "image": "https://www.smallbusiness.nsw.gov.au/sites/default/files/styles/1280/public/2024-10/iStock-1371763060.jpg?itok=tiZJ1Kv1",
@@ -22,7 +34,7 @@
     "githubUrl": "https://github.com/abdu128/astu-social"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Driving School Management System",
     "description": "A full-stack driving school management system with admin panel, teacher dashboard, and student portal for course management and scheduling.",
     "image": "https://media.istockphoto.com/id/1254705310/photo/strong-unrecognizable-mid-adult-man-drives-his-car.jpg?s=612x612&w=0&k=20&c=mOcfd2RNkCnNvt2FNt45vfOjJcSxh5-ahbQBhQ88pss=",
@@ -32,19 +44,19 @@
     "liveUrl": "https://edriving.netlify.app/",
     "githubUrl": "https://github.com/edrivingschool/edrivingstudent"
   },
-  {
-    "id": 4,
-    "title": "Angular E-Commerce Website",
-    "description": "A complete e-commerce website built with Angular, featuring product catalog, shopping cart, user authentication, and payment processing.",
-    "image": "https://sgwebpartners.com/wp-content/uploads/2019/04/woocommerce-wholesale-storm-creek-983x553.jpg",
-    "tags": ["Angular", "TypeScript", "E-commerce"],
-    "technologies": ["Angular", "TypeScript", "HTML", "CSS", "E-commerce APIs"],
-    "category": "web",
-    "liveUrl": "https://angular-ecommerce-demo.com",
-    "githubUrl": "https://github.com/abdu128/Angular-E-commerce-website"
+{
+    "id": 5,
+    "title": "Legebre Mobile and Web APP",
+    "description": "A modern Livestock MarketPlace Mobile ANd Web App",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdycNCRwHcG7jH6Zm4rRL3jiuZBzI7hrufgsmKLoT5R9lWwRoRGQ4LgX8&s",
+    "tags": ["HTML", "CSS", "JavaScript", "React", "Ethiopia"],
+    "technologies": ["Flutter", "React", "Node.js", "Node.js","Postgres"],
+    "category": "fullstack",
+    "liveUrl": "https://legebre.com",
+    "githubUrl": "https://github.com/abdu128/legebre"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Ethiopian Recipe Mobile App",
     "description": "A Flutter mobile app showcasing traditional Ethiopian recipes with step-by-step cooking instructions, ingredients, and cultural information.",
     "image": "https://deorwineblog.b-cdn.net/uploads/2022/06/b6.jpg",
@@ -79,7 +91,7 @@
   },
 
   {
-    "id": 10,
+    "id": 9,
     "title": "Task Management App",
     "description": "Productivity app with task management, team collaboration, and project tracking features.",
     "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop",
@@ -90,7 +102,7 @@
     "githubUrl": "https://github.com/abdu128/task-manager"
   },
   {
-    "id": 11,
+    "id": 10,
     "title": "Weather App",
     "description": "Beautiful weather app with location-based forecasts, weather maps, and customizable widgets.",
     "image": "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=400&h=300&fit=crop",
