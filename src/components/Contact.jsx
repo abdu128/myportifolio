@@ -6,6 +6,21 @@ import { AnimatePresence } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 
 const initialState = { name: '', email: '', subject: '', message: '' }
+const recipientEmail = 'abdulaziznejo1281@gmail.com'
+
+const openMailDraft = (data) => {
+  const mailSubject = encodeURIComponent(data.subject || 'Portfolio contact form message')
+  const bodyLines = [
+    `Name: ${data.name}`,
+    `Email: ${data.email}`,
+    `Subject: ${data.subject}`,
+    '',
+    data.message
+  ]
+  const mailBody = encodeURIComponent(bodyLines.join('\n'))
+
+  window.location.href = `mailto:${recipientEmail}?subject=${mailSubject}&body=${mailBody}`
+}
 
 const Contact = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
@@ -17,8 +32,8 @@ const Contact = () => {
     {
       icon: <Mail className="text-emerald-400" />,
       title: 'Email',
-      value: 'abdulaziznejo1281@gmail.com',
-      link: 'mailto:abdulaziznejo1281@gmail.com',
+      value: recipientEmail,
+      link: `mailto:${recipientEmail}`,
       color: 'from-emerald-500 to-teal-500'
     },
     {
@@ -46,17 +61,29 @@ const Contact = () => {
     setIsSubmitting(true)
     
     try {
-      // EmailJS configuration
-      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_4q8yutj'
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_zc9dzg8'
-      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'T8WnkIPtViw9fpjrg'
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
+      if (!serviceId || !templateId || !publicKey) {
+        openMailDraft(formData)
+        setIsSubmitting(false)
+        setSubmitStatus('success')
+        setFormData(initialState)
+
+        setTimeout(() => {
+          setSubmitStatus(null)
+        }, 3000)
+
+        return
+      }
 
       const templateParams = {
         from_name: formData.name,
-        email: formData.email,
+        from_email: formData.email,
         subject: formData.subject,
         message: formData.message,
-        to_email: 'abdulaziznejo1281@gmail.com'
+        to_email: recipientEmail
       }
 
       // Send email using EmailJS
@@ -78,8 +105,9 @@ const Contact = () => {
 
     } catch (error) {
       console.error('Email sending failed:', error)
+      openMailDraft(formData)
       setIsSubmitting(false)
-      setSubmitStatus('error')
+      setSubmitStatus('success')
       
       setTimeout(() => {
         setSubmitStatus(null)

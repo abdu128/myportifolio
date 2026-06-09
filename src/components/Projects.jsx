@@ -5,6 +5,12 @@ import projectsData from '../data/projects.json'
 
 const ITEMS_PER_PAGE = 6
 
+const getProjectLinks = (project) => [
+  project.liveUrl && { href: project.liveUrl, label: 'Website', variant: 'primary' },
+  project.playStoreUrl && { href: project.playStoreUrl, label: 'Play Store', variant: 'secondary' },
+  project.githubUrl && { href: project.githubUrl, label: 'GitHub', variant: 'ghost' }
+].filter(Boolean)
+
 const Projects = () => {
   const [filter, setFilter] = useState('all')
   const [currentPage, setCurrentPage] = useState(1)
@@ -147,27 +153,24 @@ const Projects = () => {
                 </p>
 
                 {/* Project Links */}
-                <div className="flex gap-3 relative z-20">
-                  {project.liveUrl && (
+                <div className="flex flex-wrap gap-3 relative z-20">
+                  {getProjectLinks(project).map((link) => (
                     <a
-                      href={project.liveUrl}
+                      key={link.label}
+                      href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 px-4 py-2 bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-center rounded-lg font-medium hover:from-emerald-700 hover:to-teal-700 transition-all duration-300 cursor-pointer"
+                      className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 cursor-pointer ${
+                        link.variant === 'primary'
+                          ? 'flex-1 min-w-[120px] bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-center hover:from-emerald-700 hover:to-teal-700'
+                          : link.variant === 'secondary'
+                            ? 'flex-1 min-w-[120px] border border-cyan-500/40 text-cyan-300 text-center hover:border-cyan-400 hover:text-cyan-200'
+                            : 'border border-gray-600 text-gray-300 hover:border-emerald-500 hover:text-emerald-400'
+                      }`}
                     >
-                      Live Demo
+                      {link.label}
                     </a>
-                  )}
-                  {project.githubUrl && (
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 border border-gray-600 text-gray-300 rounded-lg font-medium hover:border-emerald-500 hover:text-emerald-400 transition-all duration-300 cursor-pointer"
-                    >
-                      GitHub
-                    </a>
-                  )}
+                  ))}
                 </div>
               </div>
             </motion.div>

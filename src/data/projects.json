@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 5,
     "title": "Travel Ethiopia Website",
     "description": "A modern travel booking website showcasing Ethiopia's beautiful destinations including Erta Ale lava lake, Harar, Bale, and Gondar with tour packages and booking system.",
     "image": "https://travelethiopia.netlify.app/assets/img/freind.jpg",
@@ -11,7 +11,7 @@
     "githubUrl": "https://github.com/abdu128/travel"
   },
     {
-    "id": 2,
+    "id": 12,
     "title": "Angular E-Commerce Website",
     "description": "A complete e-commerce website built with Angular, featuring product catalog, shopping cart, user authentication, and payment processing.",
     "image": "https://sgwebpartners.com/wp-content/uploads/2019/04/woocommerce-wholesale-storm-creek-983x553.jpg",
@@ -44,15 +44,36 @@
     "liveUrl": "https://edriving.netlify.app/",
     "githubUrl": "https://github.com/edrivingschool/edrivingstudent"
   },
+  {
+    "id": 1,
+    "title": "Curagate Inventory Management System",
+    "description": "A modern inventory management system for tracking products, purchases, sales, and stock levels through an admin dashboard.",
+    "image": "https://placehold.co/600x400/0f172a/ffffff?text=Curagate+Inventory",
+    "tags": ["Inventory", "Admin Dashboard", "Business"],
+    "technologies": ["React", "Node.js", "Express", "Postgres", "Inventory Tracking"],
+    "category": "fullstack",
+    "liveUrl": "https://curagate.netlify.app/"
+  },
+  {
+    "id": 2,
+    "title": "Wisdom SMS",
+    "description": "A school management system for handling students, teachers, attendance, results, and daily administration workflows.",
+    "image": "https://placehold.co/600x400/0f172a/ffffff?text=Wisdom+SMS",
+    "tags": ["School Management", "Admin Panel", "Education"],
+    "technologies": ["React", "Node.js", "Postgres", "School Dashboard", "Attendance"],
+    "category": "fullstack",
+    "liveUrl": "https://wisdomeduacademy.cloud/"
+  },
 {
     "id": 5,
-    "title": "Legebre Mobile and Web APP",
+    "title": "Legebere Mobile and Web App",
     "description": "A modern Livestock MarketPlace Mobile ANd Web App",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdycNCRwHcG7jH6Zm4rRL3jiuZBzI7hrufgsmKLoT5R9lWwRoRGQ4LgX8&s",
     "tags": ["HTML", "CSS", "JavaScript", "React", "Ethiopia"],
     "technologies": ["Flutter", "React", "Node.js", "Node.js","Postgres"],
     "category": "fullstack",
-    "liveUrl": "https://legebre.com",
+    "liveUrl": "https://legebere.com/",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.legebere.marketplace&pcampaignid=web_share",
     "githubUrl": "https://github.com/abdu128/legebre"
   },
   {
